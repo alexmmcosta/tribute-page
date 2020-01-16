@@ -1,0 +1,43 @@
+#main {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "image info"
+        "img-caption link";
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(98,98,98,1) 35%, rgba(196,196,196,1) 100%);
+}
+
+#title{
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 5ch;
+    background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(98,98,98,1) 35%, rgba(196,196,196,1) 100%);;
+    grid-area: title;
+}
+
+#image {
+    grid-area: image;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#img-caption{
+    color: antiquewhite;
+    grid-area: img-caption;
+    text-align: center;
+}
+
+#tribute-info{
+    grid-area: info;
+    align-self: center;
+}
+
+#tribute-link{
+    grid-area: link;
+}

@@ -13,7 +13,7 @@
     -webkit-flex-direction: row;
     -ms-flexbox-direction: row;
     flex-direction: row;
-    -webkit-box-align: center ;
+    -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -39,6 +39,10 @@
     width: 105%;
     -o-object-fit: fill;
     object-fit: fill;
+}
+
+li {
+    line-height: 140%;
 }
 
 @media (max-width: 767px) {
